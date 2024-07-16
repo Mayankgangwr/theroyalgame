@@ -1,0 +1,7 @@
+.Container {
+    @apply w-full ;
+
+    >.TableBorder {
+        @apply border border-[#e5e7eb] pt-3 rounded-md;
+    }
+}
