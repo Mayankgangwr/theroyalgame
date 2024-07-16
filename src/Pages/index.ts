@@ -1,5 +1,5 @@
 import Dashboard from "./Dashboard/Dashboard";
-import Login from "./Forms/Login/Login";
-import SignUp from "./Forms/SignUp/SignUp";
+import Home from "./Home/Home";
 
-export { Login, SignUp, Dashboard };
+
+export { Home, Dashboard };

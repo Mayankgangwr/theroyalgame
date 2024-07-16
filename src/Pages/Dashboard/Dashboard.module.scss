@@ -1,69 +1,75 @@
-.PendingOrders,
-.ProgressOrders,
-.CompletedOrders,
-.TeamsTable {
-    @apply shadow-md shadow-gray-200 px-4 pt-2 pb-5 mt-5 h-auto w-full bg-white rounded-lg;
-
-    >.OrderStatus {
-        @apply block text-xl text-center font-semibold;
-    }
-
-    >div {
-        @apply pb-3 pt-2;
-
-        >.Header {
-            @apply text-2xl font-semibold;
-        }
-
-        >div {
-            >.SearchField {
-                margin-bottom: 0 !important;
-                height: 32px !important;
-
-                >span {
-                    background-color: #dfdfdf !important;
-                    border-radius: 15px !important;
-
-                    >input {
-                        background-color: inherit !important;
-                        border-radius: inherit !important;
-
-                        &:focus,
-                        ::after {
-                            border-bottom: none !important;
-                        }
-                    }
-
-                    &::after {
-                        border-bottom: none !important;
-                    }
-                }
-            }
-
-            >.AddMember {
-                @apply mt-0;
-
-                >button {
-                    @apply bg-[#006be9] rounded-[6px];
-                }
-            }
-        }
-
+.Container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    >.Navbar {
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 0px 70px;
+        background: linear-gradient(270deg, #37188E 0%, #0F0728 100%);
     }
 }
-.TeamsTable{
-    @apply hidden lg:block;
+
+.NavItems {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-.Tabs {
-    @apply h-8;
-    padding-left: 0.25rem/* 4px */ !important;
-    padding-right: 0.25rem/* 4px */ !important;
-    &::after {
-        left: 2px !important;
-        right: 2px !important;
+
+.NavItem {
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16.67px;
+    font-weight: 600;
+    line-height: 19.53px;
+    text-align: left;
+}
+
+.Link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Link:hover {
+    text-decoration: underline;
+}
+
+.LinkIcons {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 1px;
+    >.Icons {
+        height: 25px;
+        width: 25px;
     }
-    &::before {
-        left: 2px !important;
-        right: 2px !important;
+}
+
+.NavItem img {
+    height: 20px;
+    width: 20px;
+}
+
+.Content {
+    @apply w-full px-8 bg-[#210E55];
+    >.CarouselContainer {
+        @apply w-full bg-inherit pt-3;
+    }
+    .LiveResultContainer {
+        @apply w-full bg-inherit pt-3 grid gap-3 grid-cols-4;
+    }
+    >.LiveGameContainer {
+        @apply w-full bg-inherit pt-3 grid gap-3 grid-cols-7;
     }
 }

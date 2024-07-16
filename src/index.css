@@ -1,11 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 
 body {
-    background-color: #eff3f4 !important;
+    background-color: #210E55 !important;
 }
