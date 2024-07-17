@@ -12,6 +12,12 @@ const Footer = () => {
                 <hr className={Styles.Hr} />
                 <span>All Rights Reserved</span>
             </div>
+            <hr className="w-[80%] border-white border" />
+            <div className={Styles.ContactSection}>
+                <span>Contact Us</span>
+                <hr className={Styles.Hr} />
+                <span>Follow Us</span>
+            </div>
         </div>
     );
 }

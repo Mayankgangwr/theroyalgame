@@ -2,26 +2,52 @@
     @apply w-full h-60 flex justify-center items-center gap-2 flex-col;
     background: linear-gradient(180deg, #0F0728 0%, #000000 100%);
     border-top: 1px solid #37188E;
+
     >.LogoBox {
         @apply flex justify-center items-center gap-2 flex-col;
     }
+
     >.Hr {
         width: 161px;
         height: 0px;
         border: 1px solid #FFFFFF
     }
+
     >.CopyrightSection {
         @apply flex justify-center items-center gap-2;
+
         >.Hr {
             width: 10px;
-            rotate: 90 deg;
+            height: 0px;
+            transform: rotate(90deg);
             border: 1px solid #FFFFFF
         }
+
         >span {
             font-family: B612;
             font-size: 6px;
             font-weight: 700;
             line-height: 7.29px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    }
+
+    >.ContactSection {
+        @apply flex justify-center items-center gap-2;
+
+        >.Hr {
+            width: 10px;
+            height: 0px;
+            transform: rotate(90deg);
+            border: 1px solid #FFFFFF
+        }
+
+        >span {
+            font-family: B612;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14.58px;
             text-align: left;
             color: #FFFFFF;
         }
