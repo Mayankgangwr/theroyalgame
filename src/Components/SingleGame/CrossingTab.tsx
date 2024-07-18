@@ -6,7 +6,6 @@ export interface ICrossingTabProps {
 
 }
 const CrossingTab: FC<ICrossingTabProps> = ({ }) => {
-    const numbers = Array.from({ length: 10 }, (_, index) => index)
     return (
         <div className={Styles.GameDataEnterTabContainer}>
             <div className="w-full flex flex-col justify-center items-center gap-2">

@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Styles from "./SingleGame.module.scss"
-import { Link } from "react-router-dom";
 import { MoreCircleRegular } from "@fluentui/react-icons";
 
 export interface IGameOverViewProps {

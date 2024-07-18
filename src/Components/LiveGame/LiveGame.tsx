@@ -16,7 +16,7 @@ const LiveGame: FC<LiveGameProps> = ({
     return (
         <Link className={Styles.LiveGame} to={`/game`} key={id}>
             <div className={Styles.Header}>
-                <img className={Styles.IsLive} src="./images/IsLive.png" alt="Is Live" />
+                {isLIve && <img className={Styles.IsLive} src="./images/IsLive.png" alt="Is Live" />}
                 <MoreCircleRegular
                     color="#fff"
                     fontSize={24}

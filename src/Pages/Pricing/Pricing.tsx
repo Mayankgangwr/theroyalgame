@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "./Pricing.module.scss"
 import { Button } from "@fluentui/react-components";
 const Pricing = () => {

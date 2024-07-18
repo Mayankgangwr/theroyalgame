@@ -1,18 +1,6 @@
 import Styles from "./Pricing.module.scss"
-import { Button, Dropdown, Option, Input } from "@fluentui/react-components";
+import { Button, Input } from "@fluentui/react-components";
 const BankAccount = () => {
-    const DropdownOptions = [
-        "Cat",
-        "Caterpillar",
-        "Corgi",
-        "Chupacabra",
-        "Dog",
-        "Ferret",
-        "Fish",
-        "Fox",
-        "Hamster",
-        "Snake",
-    ];
     return (
         <div className={Styles.Container}>
             <h1 className={`${Styles.Heading} text-white`}>Account Details</h1>

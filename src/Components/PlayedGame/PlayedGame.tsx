@@ -7,7 +7,6 @@ import {
     TableCell,
 } from "@fluentui/react-components";
 import Styles from "./PlayedGame.module.scss";
-import React from "react";
 const columns = [
     { columnKey: "gameName", label: "Game Name" },
     { columnKey: "betAmount", label: "Bet Amount" },

@@ -1,7 +1,6 @@
 import { FC } from "react";
 import Styles from "./Leaderboard.module.scss"
 import { Table, TableBody, TableCell, TableHeader, TableHeaderCell, TableRow } from "@fluentui/react-components";
-import PlayedGame from "../../Components/PlayedGame/PlayedGame";
 
 
 export interface ILeaderboardProps {

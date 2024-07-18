@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Styles from "./LiveResult.module.scss"
 import { Link } from "react-router-dom";
 

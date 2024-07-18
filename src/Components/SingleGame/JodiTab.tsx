@@ -2,7 +2,6 @@ import { FC, useEffect, useState } from "react";
 import Styles from "./SingleGame.module.scss"
 import { Button, Input } from "@fluentui/react-components";
 import { jodiData as Data } from "./Data";
-import { values } from "@fluentui/react";
 import { DismissFilled } from "@fluentui/react-icons";
 
 export interface IJodiTabProps {
@@ -13,7 +12,6 @@ const JodiTab: FC<IJodiTabProps> = ({ }) => {
     const [totalBetAmt, setTotalBetAmt] = useState<number>(0);
     const [betOn, setBetOn] = useState<{ key: string; value: string }>({ key: "", value: "" });
     const [newbetAmt, setNewbetAmt] = useState<string>("");
-    const numbers = Array.from({ length: 100 }, (_, index) => index);
     useEffect(() => {
         setJodiData(Data);
         sumofBetAmt(Data);
