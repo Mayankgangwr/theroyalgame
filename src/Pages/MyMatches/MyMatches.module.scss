@@ -1,0 +1,14 @@
+.Container {
+    @apply w-full mx-auto py-8 px-[10%];
+    background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+    >.HeaderSection {
+        @apply w-full h-[250px] rounded-[30px] flex justify-between items-center px-[10%];
+        background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+        outline: 3px solid #FFD700;
+    }
+    >.Section {
+        @apply w-full min-h-[250px] rounded-[30px] mt-14;
+        background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+        outline: 3px solid #FFD700;
+    }
+}

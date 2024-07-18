@@ -14,7 +14,7 @@ const LiveGame: FC<LiveGameProps> = ({
     name = "TAJ",
     id = "game01" }) => {
     return (
-        <div className={Styles.LiveGame} key={id}>
+        <Link className={Styles.LiveGame} to={`/game`} key={id}>
             <div className={Styles.Header}>
                 <img className={Styles.IsLive} src="./images/IsLive.png" alt="Is Live" />
                 <MoreCircleRegular
@@ -25,7 +25,7 @@ const LiveGame: FC<LiveGameProps> = ({
             <div className={Styles.Content}>
                 <span>{name}</span>
             </div>
-        </div >
+        </Link >
     );
 }
 export default LiveGame

@@ -1,0 +1,43 @@
+.Container {
+    @apply w-full mx-auto py-8 px-[10%];
+    background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+    >.Heading {
+        @apply text-4xl font-bold text-center pt-10 pb-10;
+    }
+    >.Section {
+        @apply w-full min-h-[250px] rounded-[30px] p-14;
+        background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+        outline: 3px solid #FFD700;
+        >.InnerSection {
+            @apply w-full min-h-[250px] rounded-[30px] flex justify-between items-center flex-col py-10;
+            background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+            outline: 3px solid #998100;
+        }
+    }
+}
+
+.BuyNowInput {
+    @apply max-w-[300px] h-14 block;
+    >input {
+        @apply bg-[#100828] rounded-[10px] text-white text-xl font-bold;
+        outline: 2px solid #FFD700;
+    }
+}
+
+.BuyNowDropdown {
+    >button {
+        @apply bg-[#100828] rounded-[10px] text-white text-xl font-bold;
+        outline: 2px solid #FFD700;
+    }
+    >button:focus {
+        outline: 2px solid #FFD700;
+    }
+    >button::after {
+        outline: 2px solid #FFD700;
+    }
+}
+
+.BuyNowBtn {
+    @apply bg-[#100828] max-w-[300px] h-14 block;
+    outline: 2px solid #FFD700;
+}

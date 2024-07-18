@@ -1,8 +1,8 @@
 import Styles from "./Layout.module.scss";
 import DesktopHeader from "./DesktopLayout/DesktopHeader";
 import MobileHeader from "./MobileLayout/MobileHeader";
-import Sidebar from "./DesktopLayout/Sidebar";
 import { Outlet } from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 const Layout = () => {
     return (
@@ -10,18 +10,13 @@ const Layout = () => {
             <div className={Styles.MobileLayout}>
                 <MobileHeader />
                 <Outlet />
+                <Footer />
             </div>
 
-            <div className={Styles.DesktopLayout}>
-                <div className={Styles.Sidebar}>
-                    <Sidebar />
-                </div>
-                <div className={Styles.DesktopHeader}>
-                    <DesktopHeader />
-                    <div className="mt-[76px]">
-                        <Outlet />
-                    </div>
-                </div>
+            <div className={Styles.DesktopHeader}>
+                <DesktopHeader />
+                <Outlet />
+                <Footer />
             </div>
         </>
     );

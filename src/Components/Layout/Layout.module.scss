@@ -4,6 +4,8 @@
 
 .DesktopLayout {
     @apply hidden lg:flex w-full h-full;
+    background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+
 
     >.Sidebar {
         @apply md:w-[25%] lg:w-[18%] xl:w-[13%] shadow-sm fixed;
@@ -11,7 +13,7 @@
     }
 
     >.DesktopHeader {
-        @apply md:ml-[25%] lg:ml-[18%] xl:ml-[13%] md:w-[75%] lg:w-[82%] xl:w-[87%] h-full;
+        @apply w-full h-full;
     }
 }
 

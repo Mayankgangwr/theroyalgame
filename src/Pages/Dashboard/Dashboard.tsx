@@ -1,18 +1,10 @@
 import { FC } from "react";
 import Styles from "./Dashboard.module.scss"
-import { Link } from "react-router-dom";
 import CustomCarousel from "../../Components/Carousel/Carousel";
 import LiveResult from "../../Components/LiveResult/LiveResult";
 import LiveGame from "../../Components/LiveGame/LiveGame";
-import Footer from "../../Components/Layout/Footer/Footer";
 
 
-const navItems = [
-    { text: 'Home', url: '#' },
-    { text: 'My Matches', url: '#' },
-    { text: 'Leaderboard', url: '#' },
-    { text: 'Games', url: '#' }
-];
 
 const images = [
     "https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
@@ -34,28 +26,6 @@ export interface IDashboard {
 const Dashboard: FC<IDashboard> = ({ }) => {
     return (
         <div className={Styles.Container}>
-            <div className={Styles.Navbar}>
-                <Link to={"/"} >
-                    <img className={Styles.Logo} src="./images/namelogo.png" alt="Logo" />
-                </Link>
-                <ul className={Styles.NavItems}>
-                    {navItems.map((item, index) => (
-                        <li className={Styles.NavItem} key={index}>
-                            <Link className={Styles.Link} to={`/${item.url}`}>
-                                {item.text}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className={Styles.NavItems}>
-                    <Link className={Styles.LinkIcons} to={"/"}>
-                        <img className={Styles.Icons} src="./images/notification.png" alt="" />
-                    </Link>
-                    <Link className={Styles.LinkIcons} to={"/"}>
-                        <img className={Styles.Icons} src="./images/user.png" alt="" />
-                    </Link>
-                </div>
-            </div>
             <div className={Styles.Content}>
                 <div className={Styles.CarouselContainer}>
                     <CustomCarousel images={images} />
@@ -77,9 +47,8 @@ const Dashboard: FC<IDashboard> = ({ }) => {
                     <LiveGame name={"TAJ"} />
                     <LiveGame name={"TAJ"} />
                 </div>
-                
+
             </div>
-            <Footer/>
         </div>
     );
 }

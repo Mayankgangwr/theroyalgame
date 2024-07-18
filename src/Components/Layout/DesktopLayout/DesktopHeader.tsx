@@ -1,11 +1,15 @@
 import Styles from "./DesktopLayout.module.scss";
 import Flex, { FlexDirection, AlignItems, JustifyContent, FlexWrap } from "../../Flex/Flex";
-import { Text, Persona } from "@fluentui/react-components";
-import moment from "moment";
-import InputField from "../../DataFields/InputField";
-import { AlertFilled, WeatherMoonRegular, WeatherSunnyFilled } from "@fluentui/react-icons";
+import { Persona } from "@fluentui/react-components";
+import { AlertFilled } from "@fluentui/react-icons";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
+const navItems = [
+    { text: 'Home', url: '/' },
+    { text: 'My Matches', url: 'mymatch' },
+    { text: 'Leaderboard', url: 'leaderboard' },
+    { text: 'Games', url: '#' }
+];
 const DesktopHeader = () => {
     const [hasShadow, setHasShadow] = useState(false);
     useEffect(() => {
@@ -22,34 +26,26 @@ const DesktopHeader = () => {
         };
     }, []);
     return (
-        <Flex className={`${Styles.Container} ${hasShadow  && Styles.Scrolled}`} direction={FlexDirection.ROW} alignItems={AlignItems.CENTER} justifyContent={JustifyContent.BETWEEN} flexWrap={FlexWrap.WRAP}>
-            <Flex direction={FlexDirection.COLUMN} alignItems={AlignItems.START} justifyContent={JustifyContent.CENTER}>
-                <Text className={Styles.Header}>Dashboard</Text>
-                <Text className={Styles.Time}>{moment().format("Do MMM YYYY")}</Text>
-            </Flex>
-            <Flex className="gap-3" direction={FlexDirection.ROW} alignItems={AlignItems.CENTER} justifyContent={JustifyContent.CENTER}>
-                <InputField
-                    className={Styles.SearchField}
-                    type="search"
-                    name={"search"}
-                    value={""}
-                    placeholder="Search"
-                    setValue={() => { }}
-                />
-                <Flex
-                    className={Styles.ThemeManage}
-                    direction={FlexDirection.ROW}
-                    alignItems={AlignItems.CENTER}
-                    justifyContent={JustifyContent.BETWEEN}
-                    flexWrap={FlexWrap.WRAP}
-                >
-                    <WeatherSunnyFilled fontSize={32} color="#fdbd22" />
-                    <WeatherMoonRegular fontSize={32} />
+        <div className={Styles.Container}>
+            <Flex className={`${Styles.Navbar} ${hasShadow && Styles.Scrolled}`} alignItems={AlignItems.CENTER} justifyContent={JustifyContent.BETWEEN} flexWrap={FlexWrap.WRAP}>
+                <Link to={"/"} >
+                    <img className={Styles.Logo} src="./images/namelogo.png" alt="Logo" />
+                </Link>
+                <ul className={Styles.NavItems}>
+                    {navItems.map((item, index) => (
+                        <li className={Styles.NavItem} key={index}>
+                            <Link className={Styles.Link} to={`/${item.url}`}>
+                                {item.text}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                <Flex className="gap-3" direction={FlexDirection.ROW} alignItems={AlignItems.CENTER} justifyContent={JustifyContent.CENTER}>
+                    <div className={Styles.AlertMessage}><AlertFilled fontSize={32} /></div>
+                    <Persona className={Styles.Persona} name="Prince Kurmi" textAlignment="center" color="#FFFFF" size="extra-large" />
                 </Flex>
-                <div className={Styles.AlertMessage}><AlertFilled fontSize={32} /></div>
-                <Persona name="Prince Kurmi" textAlignment="center" size="extra-large" />
             </Flex>
-        </Flex>
+        </div>
     );
 }
 export default DesktopHeader;

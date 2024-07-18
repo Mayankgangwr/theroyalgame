@@ -3,69 +3,69 @@ import { FluentProvider, webLightTheme } from '@fluentui/react-components';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Layout } from "./Components";
 import AuthLayout from "./Components/AuthLayout/AuthLayout";
-import { Dashboard, Home } from "./Pages";
+import { BankAccount, BuyNow, Dashboard, Game, Home, Leaderboard, MyMatches, Pricing, Withdraw } from "./Pages";
 import { useEffect, useState } from 'react';
 const router = createBrowserRouter([
-  // {
-  //   path: '/',
-  //   element: <Layout />,
-  //   children: [
-  //     {
-  //       path: '/',
-  //       element: <AuthLayout authentication={false}>
-  //         <Dashboard />
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/orders',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Orders</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/billing',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Billing</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/teams',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>My Team</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/inventory',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Inventory</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/reports',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Reports</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/settings',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Settings</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/help',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Help</h1>
-  //       </AuthLayout>
-  //     },
-  //     {
-  //       path: '/logout',
-  //       element: <AuthLayout authentication={false}>
-  //         <h1>Logout</h1>
-  //       </AuthLayout>
-  //     },
-  //   ]
-  // },
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <AuthLayout authentication={false}>
+          <Dashboard />
+        </AuthLayout>
+      },
+      {
+        path: '/game',
+        element: <AuthLayout authentication={false}>
+          < Game />
+        </AuthLayout>
+      },
+      {
+        path: '/mymatch',
+        element: <AuthLayout authentication={false}>
+          <MyMatches />
+        </AuthLayout>
+      },
+      {
+        path: '/pricing',
+        element: <AuthLayout authentication={false}>
+          <Pricing />
+        </AuthLayout>
+      },
+      {
+        path: '/buynow',
+        element: <AuthLayout authentication={false}>
+          <BuyNow />
+        </AuthLayout>
+      },
+      {
+        path: '/withdraw',
+        element: <AuthLayout authentication={false}>
+          <Withdraw />
+        </AuthLayout>
+      },
+      {
+        path: '/bankaccount',
+        element: <AuthLayout authentication={false}>
+          <BankAccount />
+        </AuthLayout>
+      },
+      {
+        path: '/leaderboard',
+        element: <AuthLayout authentication={false}>
+          <Leaderboard />
+        </AuthLayout>
+      },
+      {
+        path: '/logout',
+        element: <AuthLayout authentication={false}>
+          <h1>Logout</h1>
+        </AuthLayout>
+      },
+    ]
+  },
   {
     path: '/home',
     element: <AuthLayout authentication={false}>

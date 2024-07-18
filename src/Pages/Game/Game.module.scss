@@ -1,0 +1,30 @@
+.Container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #210E55 !important;
+}
+
+.Tabs {
+    @apply h-8;
+    padding-left: 0.25rem/* 4px */
+    !important;
+    padding-right: 0.25rem/* 4px */
+    !important;
+    >span {
+        @apply text-2xl font-extrabold;
+        color: white !important;
+    }
+    &.ActiveTab span {
+        color: #FFD700 !important;
+    }
+    &::after {
+        left: 2px !important;
+        right: 2px !important;
+        background-color: #FFD700 !important;
+    }
+    &::before {
+        left: 2px !important;
+        right: 2px !important;
+    }
+}

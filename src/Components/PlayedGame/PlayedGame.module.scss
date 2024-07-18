@@ -1,0 +1,37 @@
+.Container {
+    @apply w-[80%] gap-0 rounded-[50px] mx-auto;
+    background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
+}
+
+.TableHeaderCell {
+    @apply text-white text-base text-center font-bold;
+    >div {
+        @apply inline;
+    }
+}
+
+.TableRow {
+    height: 65px;
+    background: linear-gradient(180deg, #FF0000 0%, #990000 100%);
+}
+
+.TableRow:nth-child(2n) {
+    background: linear-gradient(180deg, #FFD700 0%, #998100 100%);
+}
+
+.TableRow:nth-child(3n) {
+    background: linear-gradient(180deg, #05FF00 0%, #039900 100%);
+}
+
+.TableCell {
+    @apply text-white font-bold text-base text-center;
+}
+
+.TableRow:last-child {
+    .TableCell:first-child {
+        border-bottom-left-radius: 30px;
+    }
+    .TableCell:last-child {
+        border-bottom-right-radius: 30px;
+    }
+}

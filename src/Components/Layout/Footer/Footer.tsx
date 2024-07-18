@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import Styles from "./Footer.module.scss";
-
-
+import { Discord, Facebook, Instagram, Whatsapp, X } from "./Icons"
 const Footer = () => {
     return (
         <div className={Styles.Footer}>
@@ -17,6 +17,29 @@ const Footer = () => {
                 <span>Contact Us</span>
                 <hr className={Styles.Hr} />
                 <span>Follow Us</span>
+            </div>
+            <div className={Styles.SocialSection}>
+                <Link className={Styles.SocialLink} to={"/"}>
+                    <Discord />
+                    <span>@royalgame</span>
+                </Link>
+                <Link className={Styles.SocialLink} to={"/"}>
+                    <Instagram />
+                    <span>@royalgame</span>
+                </Link>
+                <Link className={Styles.SocialLink} to={"/"}>
+                    <Facebook />
+                    <span>@royalgame</span>
+                </Link>
+                <Link className={Styles.SocialLink} to={"/"}>
+                    <Whatsapp />
+                    <span>+91 8755507582</span>
+                </Link>
+                <Link className={Styles.SocialLink} to={"/"}>
+                    <X />
+                    <span>@royalgame</span>
+                </Link>
+
             </div>
         </div>
     );
