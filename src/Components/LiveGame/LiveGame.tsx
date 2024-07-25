@@ -14,7 +14,7 @@ const LiveGame: FC<LiveGameProps> = ({
     name = "TAJ",
     id = "game01" }) => {
     return (
-        <Link className={Styles.LiveGame} to={`/game`} key={id}>
+        <Link className={Styles.LiveGame} style={{ backgroundImage: "url(`./ images / tajAvatar.jpg`)" }} to={`/game`} key={id}>
             <div className={Styles.Header}>
                 {isLIve && <img className={Styles.IsLive} src="./images/IsLive.png" alt="Is Live" />}
                 <MoreCircleRegular
