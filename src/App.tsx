@@ -72,12 +72,7 @@ const router = createBrowserRouter([
       <Home />
     </AuthLayout>
   },
-  {
-    path: '/dashboard',
-    element: <AuthLayout authentication={false}>
-      <Dashboard />
-    </AuthLayout>
-  },
+  
 
 ]);
 export default function App() {

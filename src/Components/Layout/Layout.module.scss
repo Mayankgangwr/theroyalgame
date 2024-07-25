@@ -1,36 +1,39 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .MobileLayout {
     @apply lg:hidden;
+    flex: 1;
+    background: #210e55;
 }
 
 .DesktopLayout {
-    @apply hidden lg:flex w-full h-full;
+    @apply hidden lg:block w-full h-full;
     background: linear-gradient(180deg, #37188E 0%, #0F0728 100%);
-
-
-    >.Sidebar {
-        @apply md:w-[25%] lg:w-[18%] xl:w-[13%] shadow-sm fixed;
-        height: 100vh;
-    }
+    flex: 1;
+    background: #210e55;
 
     >.DesktopHeader {
-        @apply w-full h-full;
+        @apply w-full;
     }
 }
 
-// MenuItem Styling
-
-.MenuItem {
-    @apply w-full gap-3 my-[8px] px-3 py-[6px] w-40 rounded-xl;
-
-    &.Active{
-        @apply bg-[#879fff] text-white;
-    }
-
-    >svg {
-        @apply text-[21px];
-    }
-
-    >span {
-        @apply font-medium text-lg;
-    }
+.FooterContainer {
+    @apply w-full h-[136px] md:h-[230px] lg:h-[250px];
 }

@@ -2,6 +2,7 @@
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
+
     >.Navbar {
         width: inherit;
         display: flex;
@@ -50,6 +51,7 @@
     background-color: #FFFFFF;
     border-radius: 50%;
     padding: 1px;
+
     >.Icons {
         height: 25px;
         width: 25px;
@@ -62,14 +64,17 @@
 }
 
 .Content {
-    @apply w-full px-8 bg-[#210E55];
+    @apply w-full px-2 sm:px-2 md:px-4 lg:px-6 xl:px-8 bg-[#210E55];
+
     >.CarouselContainer {
         @apply w-full bg-inherit pt-3;
     }
+
     .LiveResultContainer {
-        @apply w-full bg-inherit pt-3 grid gap-3 grid-cols-4;
+        @apply w-full bg-inherit pt-3 grid gap-1 sm:gap-1 md:gap-2 lg:gap-3 grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5;
     }
+
     >.LiveGameContainer {
-        @apply w-full bg-inherit pt-3 grid gap-3 grid-cols-7 pb-4;
+        @apply w-full bg-inherit pt-3 grid gap-2 lg:gap-3 grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 pb-4;
     }
 }

@@ -6,13 +6,13 @@
 }
 
 .Tabs {
-    @apply h-8;
+    @apply h-4 md:h-7 lg:h-8;
     padding-left: 0.25rem/* 4px */
     !important;
     padding-right: 0.25rem/* 4px */
     !important;
     >span {
-        @apply text-2xl font-extrabold;
+        @apply text-sm md:text-xl lg:text-2xl font-extrabold;
         color: white !important;
     }
     &.ActiveTab span {

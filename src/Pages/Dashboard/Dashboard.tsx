@@ -47,7 +47,6 @@ const Dashboard: FC<IDashboard> = ({ }) => {
                     <LiveGame name={"TAJ"} />
                     <LiveGame name={"TAJ"} />
                 </div>
-
             </div>
         </div>
     );

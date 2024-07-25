@@ -10,16 +10,18 @@ const Home: FC<IHome> = ({ }) => {
         <div className={Styles.Container}>
             <div className={Styles.Navbar}>
                 <Link to={"/"} >
-                    <img className={Styles.Logo} src="./images/namelogo.png" alt="Logo" />
+                    <img className="h-12 md:h-full" src="./images/namelogo.png" alt="Logo" />
                 </Link>
             </div>
             <div className={Styles.BannerContainer}>
                 <div className={Styles.AuthContainer}>
-                    <div>
-                        <img className={Styles.Logo} src="./images/logo.png" alt="Logo" />
-                        <img className={Styles.Logo} src="./images/name.png" alt="Name" />
+                    <div className="flex flex-col justify-center items-center">
+                        <img className="h-12 md:h-full" src="./images/logo.png" alt="Logo" />
+                        <img className="h-10 md:h-full" src="./images/name.png" alt="Name" />
                     </div>
-                    <img className={Styles.Logo} src="./images/googleAuth.png" alt="Google Auth" />
+                    <Link to={"/"} >
+                        <img className="h-10 md:h-full" src="./images/googleAuth.png" alt="Google Auth" />
+                    </Link>
                 </div>
             </div>
 

@@ -7,39 +7,40 @@ export interface IGameOverViewProps {
 }
 const GameOverView: FC<IGameOverViewProps> = ({ }) => {
     return (
-        <div className={Styles.Container}>
-            <div className="text-end pt-3 pr-7">
+        <div className={`${Styles.Container} relative`}>
+            <div className=" absolute top-0 md:top-1 lg:top-4 right-2 md:right-3 lg:right-8">
                 <MoreCircleRegular
+                    className="text-base md:text-xl lg:text-2xl"
                     color="#fff"
-                    fontSize={24}
+
                 />
             </div>
             <div className={Styles.GameSection}>
                 <div className={Styles.GameDetails}>
                     <img src="./images/tajAvatar.jpg" />
                     <div className={Styles.Details}>
-                        <div className=" flex justify-start items-start flex-col">
-                            <span className=" text-white ">GAME NAME</span>
-                            <span className="text-3xl font-extrabold text-[#FFD700]">TAJ</span>
+                        <div className="w-full flex justify-start items-start flex-col">
+                            <span className=" text-white text-[9px] md:text-base lg:text-xl">GAME NAME</span>
+                            <span className="text-sm md:text-2xl lg:text-3xl font-extrabold text-[#FFD700]">TAJ</span>
                         </div>
-                        <div className=" flex justify-start items-start flex-col">
-                            <span className=" text-white ">GAME NAME</span>
-                            <span className="text-3xl font-extrabold text-[#FFD700]">TAJ</span>
+                        <div className="w-full flex justify-start items-start flex-col">
+                            <span className=" text-white text-[9px] md:text-base lg:text-xl">BETTING OPEN TIME</span>
+                            <span className="text-sm md:text-2xl lg:text-3xl font-extrabold text-[#FFD700]">5:40 PM</span>
                         </div>
-                        <div className=" flex justify-start items-start flex-col">
-                            <span className=" text-white ">GAME NAME</span>
-                            <span className="text-3xl font-extrabold text-[#FFD700]">TAJ</span>
+                        <div className="w-full flex justify-start items-start flex-col">
+                            <span className=" text-white text-[9px] md:text-base lg:text-xl">BETTING CLOSE TIME</span>
+                            <span className="text-sm md:text-2xl lg:text-3xl font-extrabold text-[#FFD700]">6:30 PM</span>
                         </div>
 
                     </div>
                 </div>
                 <div className={Styles.WinningSection}>
                     <div className={Styles.Result}>
-                        <span className="text-8xl font-extrabold">98</span>
+                        <span className="text-2xl md:text-5xl lg:text-8xl font-extrabold">98</span>
                         <span className="text-sm font-extrabold">LAST WINNER</span>
                         <img src="./images/crown.png" alt="Crown" />
                     </div>
-                    <span className="text-3xl font-extrabold text-[#FFD700]">THE ROYAL WINNER</span>
+                    <span className="text-xs md:text-2xl lg:text-3xl font-extrabold text-[#FFD700]">THE ROYAL WINNER</span>
                 </div>
             </div>
         </div>

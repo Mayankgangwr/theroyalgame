@@ -4,8 +4,8 @@ import { Discord, Facebook, Instagram, Whatsapp, X } from "./Icons"
 const Footer = () => {
     return (
         <div className={Styles.Footer}>
-            <img src="./images/logo.png" alt="Logo" width={`80px`} height={`80px`} />
-            <img src="./images/name.png" alt="Name" width={`150px`} height={`30px`} />
+            <img src="./images/logo.png" alt="Logo" className="w-8 h-8 md:w-11 md:h-11 lg:w-[80px] lg:h-[60px]" />
+            <img src="./images/name.png" alt="Name" className="w-12 h-3  md:w-32 md:h-6 lg:w-[150px] lg:h-[30px]" />
             <hr className={Styles.Hr} />
             <div className={Styles.CopyrightSection}>
                 <span>2024 RoyalGame.com</span>

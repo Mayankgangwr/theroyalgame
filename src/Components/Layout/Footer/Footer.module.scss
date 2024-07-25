@@ -1,23 +1,28 @@
 .Footer {
-    @apply w-full h-60 flex justify-center items-center gap-2 flex-col;
+    @apply w-full h-32 md:h-56 lg:h-60 flex justify-center items-center gap-[2px] md:gap-1 lg:gap-2 flex-col;
     background: linear-gradient(180deg, #0F0728 0%, #000000 100%);
     border-top: 1px solid #37188E;
+
     >.LogoBox {
-        @apply flex justify-center items-center gap-2 flex-col;
+        @apply flex justify-center items-center gap-[2px] md:gap-1 lg:gap-2 flex-col;
     }
+
     >.Hr {
         width: 161px;
         height: 0px;
         border: 1px solid #FFFFFF
     }
+
     >.CopyrightSection {
-        @apply flex justify-center items-center gap-2;
+        @apply flex justify-center items-center gap-[2px] md:gap-1 lg:gap-2;
+
         >.Hr {
             width: 10px;
             height: 0px;
             transform: rotate(90deg);
             border: 1px solid #FFFFFF
         }
+
         >span {
             font-family: B612;
             font-size: 6px;
@@ -27,40 +32,47 @@
             color: #FFFFFF;
         }
     }
+
     >.ContactSection {
-        @apply flex justify-center items-center gap-2;
+        @apply flex justify-center items-center gap-[2px] md:gap-1 lg:gap-2;
+
         >.Hr {
             width: 10px;
             height: 0px;
             transform: rotate(90deg);
             border: 1px solid #FFFFFF
         }
+
         >span {
+            @apply text-[8px] md:text-[10px] lg:text-[12px];
             font-family: B612;
-            font-size: 12px;
             font-weight: 700;
-            line-height: 14.58px;
+            line-height: 12px;
             text-align: left;
             color: #FFFFFF;
         }
     }
+
     >.SocialSection {
-        @apply w-[80%] flex justify-between items-center gap-2;
+        @apply w-[96%] md:w-[90%] lg:w-[80%] flex justify-between items-center gap-[2px] md:gap-1 lg:gap-2;
+
         >.SocialLink {
-            @apply flex justify-center items-center gap-2;
+            @apply flex justify-center items-center gap-[2px] md:gap-1 lg:gap-2;
+
             >img {
                 width: 24px !important;
             }
+
             >svg {
-                width: 24px;
-                height: 24px;
+                @apply w-2 h-2 md:w-4 md:h-4 lg:w-6 lg:h-6;
                 fill: #FFFFFF;
             }
+
             >span {
+                @apply text-[6px] md:text-[9px] lg:text-[12px];
                 font-family: B612;
-                font-size: 12px;
                 font-weight: 700;
-                line-height: 14.58px;
+                line-height: 12px;
                 text-align: left;
                 color: #FFFFFF;
             }

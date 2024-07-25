@@ -1,13 +1,16 @@
 .LiveGame {
-    @apply h-[300px] w-full bg-cover bg-center rounded-2xl;
+    @apply h-36 md:h-52 lg:h-[300px] w-full bg-cover bg-center rounded-2xl;
     background-image: url("./images/tajAvatar.jpg");
+
     >.Header {
         @apply flex justify-between items-start pt-2 px-2 h-[50%];
     }
+
     >.Content {
         @apply flex justify-center items-center h-[50%];
+
         >span {
-            @apply text-[#FFFFFF] text-3xl font-extrabold;
+            @apply text-[#FFFFFF] text-sm md:text-2xl lg:text-3xl font-extrabold;
         }
     }
 }

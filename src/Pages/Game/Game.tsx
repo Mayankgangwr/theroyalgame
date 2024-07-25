@@ -23,7 +23,7 @@ const Game: FC<IGameProps> = ({ }) => {
     return (
         <div className={`${Styles.Container} pb-10`}>
             <GameOverView />
-            <TabList className="w-[80%] mx-auto justify-between pt-7 pb-2" defaultSelectedValue="jodi" onTabSelect={(_event: any, data: any) => {
+            <TabList className="w-[96%] md:w-[90%] lg:w-[80%] mx-auto justify-between pt-2 md:pt-4 lg:pt-7 pb-[2px] md:pb-1 lg:pb-2" defaultSelectedValue="jodi" onTabSelect={(_event: any, data: any) => {
                 const value = data.value;
                 setOrderStatus(value)
             }}>

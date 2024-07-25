@@ -6,19 +6,23 @@ import Footer from "./Footer/Footer";
 
 const Layout = () => {
     return (
-        <>
-            <div className={Styles.MobileLayout}>
-                <MobileHeader />
-                <Outlet />
-                <Footer />
-            </div>
+        <div className={Styles.Layout}>
+            <div className={Styles.Content}>
+                <div className={Styles.MobileLayout}>
+                    <MobileHeader />
+                    <Outlet />
+                </div>
 
-            <div className={Styles.DesktopHeader}>
-                <DesktopHeader />
-                <Outlet />
+                <div className={Styles.DesktopLayout}>
+                    <DesktopHeader />
+                    <Outlet />
+                </div>
+            </div>
+            <div className={Styles.FooterContainer}>
                 <Footer />
             </div>
-        </>
+        </div>
     );
 }
+
 export default Layout;

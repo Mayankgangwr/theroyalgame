@@ -81,12 +81,12 @@ const Rows = [
 const Leaderboard: FC<ILeaderboardProps> = ({ }) => {
     return (
         <div className={`${Styles.Container}`}>
-            <div className={`${Styles.HeaderSection} w-full min-h-[250px]`} >
+            <div className={`${Styles.HeaderSection} w-full min-h-36 md:min-h-48 lg:min-h-60`} >
                 <div>
-                    <p className="text-3xl font-bold text-[#FFD700]">Leaderboard</p>
-                    <p className="text-[10px] font-bold text-white">Rise to the Top: Track Your Betting Brilliance on the Leaderboard!</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#FFD700] text-center">Leaderboard</p>
+                    <p className="text-[7px] md:text-[10px] font-bold text-white text-center">Rise to the Top: Track Your Betting Brilliance on the Leaderboard!</p>
                 </div>
-                <img className="h" src="./images/CustomRoulette.png" />
+                <img className="w-48 md:w-56 lg:w-64" src="./images/CustomRoulette.png" />
             </div>
             <div className={`${Styles.Section}`}>
                 <Table className={`${Styles.Table} `}>

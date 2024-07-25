@@ -4,7 +4,7 @@
 }
 
 .TableHeaderCell {
-    @apply text-white text-base text-center font-bold;
+    @apply text-white text-[10px] leading-3 md:text-sm lg:text-base text-center font-bold;
     >div {
         @apply inline;
     }
@@ -24,7 +24,7 @@
 }
 
 .TableCell {
-    @apply text-white font-bold text-base text-center;
+    @apply text-white font-bold text-[10px] leading-3 md:text-sm lg:text-base text-center;
 }
 
 .TableRow:last-child {
