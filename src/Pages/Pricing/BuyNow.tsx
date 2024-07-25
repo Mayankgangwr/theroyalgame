@@ -17,17 +17,17 @@ const BuyNow = () => {
         <div className={Styles.Container}>
             <h1 className={`${Styles.Heading} text-white`}>Pay Now</h1>
             <div className={`${Styles.Section} !pb-5`}>
-                <div className="flex justify-between items-center">
-                    <div className="flex flex-col justify-center items-center gap-5">
-                        <div className="flex flex-col justify-center items-start gap-2">
+                <div className="w-full flex justify-between flex-col-reverse md:flex-row items-center">
+                    <div className="w-full flex flex-col justify-center items-center gap-5">
+                        <div className="w-full flex flex-col justify-center items-start gap-2">
                             <label className="text-base font-bold text-[#FFD700]">Enter Your Details</label>
-                            <Input className={`${Styles.BuyNowInput} !w-[300px] !h-14`} type="text" value="" placeholder="UPI Number" />
+                            <Input className={`${Styles.BuyNowInput} !w-full !h-[50px]`} type="text" value="" placeholder="UPI Number" />
                         </div>
-                        <div className="flex flex-col justify-center items-start gap-2">
+                        <div className="w-full flex flex-col justify-center items-start gap-2">
                             <label className="text-base font-bold text-[#FFD700]">Send Payment Request</label>
                             <Dropdown
                                 placeholder="Select an animal"
-                                className={`${Styles.BuyNowDropdown} !w-[300px] !h-14`}
+                                className={`${Styles.BuyNowDropdown}  !w-full !h-[50px]`}
                             >
                                 {DropdownOptions.map((option) => (
                                     <Option key={option} disabled={option === "Ferret"}>
@@ -36,36 +36,22 @@ const BuyNow = () => {
                                 ))}
                             </Dropdown>
                         </div>
-                        <div className="flex flex-col justify-center items-start gap-2">
+                        <div className="w-full flex flex-col justify-center items-start gap-2">
                             <label className="text-base font-bold text-[#FFD700]">Add Screenshot</label>
-                            {/* <UploadButton uploader={uploader}
-                            options={options}
-                            onComplete={files => alert(files.map(x => x.fileUrl).join("\n"))}>
-                            {({ onClick }) =>
-                                <Button className={`${Styles.BuyNowBtn} !w-[300px] !h-14`} onClick={onClick}>
-                                    Upload...
-                                </Button>
-                            }
-                        </UploadButton> */}
-                            <input className={`${Styles.BuyNowBtn} !w-[300px] !h-14`} type="file" value="" placeholder="UPI Number" />
-
+                            <input className={`${Styles.BuyNowBtn} !max-w-full !w-full !h-[50px]`} type="file" value="" placeholder="UPI Number" />
                         </div>
-
                     </div>
-                    <div className="flex flex-col justify-center items-center gap-2">
+                    <div className="flex flex-col justify-center items-center gap-2 pb-3 md:pb-0">
                         <h1 className={`text-center text-2xl font-bold text-[#FFD700]`}>Amount ₹ 100</h1>
                         <img src="./images/QR.png" alt="QR Code" />
                         <h1 className={`text-center text-3xl font-bold text-[#FFFFFF] pt-2`}>xyz@upi</h1>
                     </div>
                 </div>
-                <div className="w-full flex justify-center pt-10">
-                    <Button className="!h-[80px] !w-[350px] !rounded-[10px] !bg-[#FFD700] !text-[#FFFFFF] !text-2xl !font-bold mx-auto">Confirm</Button>
+                <div className="flex justify-center pt-2 md:pt-7 lg:pt-10">
+                    <Button className="w-40 md:w-60 lg:w-72 h-10 md:h-14 lg:h-[84px] !text-sm !md:text-2xl !lg:text-3xl !font-bold  !bg-[#FFD700] !text-[#FFFFFF] !mt-10 mx-auto">Confirm</Button>
                 </div>
             </div>
             <h1 className={`${Styles.Heading} text-white !text-xl !pt-4`}>Scan & Bet: Instant Access to Your Betting World!</h1>
-
-            
-
         </div>
     );
 }
