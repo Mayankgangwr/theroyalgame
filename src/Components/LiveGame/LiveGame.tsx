@@ -14,7 +14,7 @@ const LiveGame: FC<LiveGameProps> = ({
     name = "TAJ",
     id = "game01" }) => {
     return (
-        <Link className={Styles.LiveGame} style={{ backgroundImage: "url(`https://res.cloudinary.com/chaiaurcodelearn/image/upload/f_auto,q_auto/pte3apvrfjbrevlsdrgn`)" }} to={`/game`} key={id}>
+        <Link className={Styles.LiveGame} style={{ backgroundImage: "url(https://res.cloudinary.com/chaiaurcodelearn/image/upload/f_auto,q_auto/pte3apvrfjbrevlsdrgn)" }} to={`/game`} key={id}>
             <div className={Styles.Header}>
                 {isLIve && <img className={Styles.IsLive} src="./images/IsLive.png" alt="Is Live" />}
                 <MoreCircleRegular
