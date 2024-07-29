@@ -1,5 +1,5 @@
 .Container {
-    @apply p-2 h-auto grid grid-cols-3;
+    @apply p-2 h-[65px] flex justify-between items-center;
     background: linear-gradient(270deg, #37188E 0%, #0F0728 100%);
     border: 0px 0px 1px 0px;
 
@@ -17,7 +17,6 @@
         line-height: inherit !important;
     }
 }
-
 
 .AlertMessage {
     @apply bg-[#dfdfdf] rounded-2xl px-1 py-1 gap-2;

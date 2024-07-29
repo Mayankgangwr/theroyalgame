@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         </AuthLayout>
       },
       {
-        path: '/buynow',
+        path: '/buynow/:id',
         element: <AuthLayout authentication={false}>
           <BuyNow />
         </AuthLayout>

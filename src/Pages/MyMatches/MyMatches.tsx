@@ -13,7 +13,7 @@ const MyMatches: FC<IMyMatchesProps> = ({ }) => {
                     <p className="text-2xl md:text-3xl font-bold text-[#FFD700] text-center">My Matches</p>
                     <p className="text-[7px] md:text-[10px] font-bold text-white text-center">Review Your Bets: Relive the Thrill of Every Match!</p>
                 </div>
-                <img className="w-48 md:w-56 lg:w-64" src="./images/CustomRoulette.png" />
+                <img className="w-48 md:w-56 lg:w-64" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238547/theroyalgame/CustomRoulette.png" />
             </div>
             <div className={`${Styles.Section}`}>
                 <p className="py-2 text-center text-sm md:text-xl font-bold text-white">Harup Game</p>

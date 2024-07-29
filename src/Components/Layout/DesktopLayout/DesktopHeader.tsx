@@ -29,7 +29,7 @@ const DesktopHeader = () => {
         <div className={Styles.Container}>
             <Flex className={`${Styles.Navbar} ${hasShadow && Styles.Scrolled}`} alignItems={AlignItems.CENTER} justifyContent={JustifyContent.BETWEEN} flexWrap={FlexWrap.WRAP}>
                 <Link to={"/"} >
-                    <img className={Styles.Logo} src="./images/namelogo.png" alt="Logo" />
+                    <img className={Styles.Logo} src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239181/theroyalgame/namelogo.png" alt="Logo" />
                 </Link>
                 <ul className={Styles.NavItems}>
                     {navItems.map((item, index) => (

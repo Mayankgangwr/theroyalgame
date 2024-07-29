@@ -12,7 +12,7 @@ export interface LiveResultProps {
 }
 const LiveResult: FC<LiveResultProps> = ({
     colorCode = '#FFD700',
-    image = './images/GameLogo.png',
+    image = 'https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238966/theroyalgame/tajlogo.png',
     name = "TAJ",
     result = 93,
     id = "game01" }) => {

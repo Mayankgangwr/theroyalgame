@@ -6,11 +6,11 @@ const BankAccount = () => {
             <h1 className={`${Styles.Heading} text-white`}>Account Details</h1>
             <div className={`${Styles.Section} !pb-5`}>
                 <div className="w-full flex-col flex justify-center items-center">
-                    <img className="!w-[90%] !md:w-[300px]" src="./images/Profile.png" />
+                    <img className="!w-[90%] !md:w-[300px]" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239349/theroyalgame/Profile.png" />
                     <div className="w-full grid grid-cols-1 md:grid-cols-3">
                         <div className="block pt-8 md:pt-14 lg:pt-16">
                             <div className="flex justify-center items-center gap-2">
-                                <img src="./images/Vector.png" alt="User" />
+                                <img src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239528/theroyalgame/Vector.png" alt="User" />
                                 <span className="text-[#FFD700] text-base font-bold">Personal Details</span>
                             </div>
                             <div className="flex flex-col items-center">
@@ -21,7 +21,7 @@ const BankAccount = () => {
                         </div>
                         <div className="block pt-8 md:pt-14 lg:pt-16">
                             <div className="flex justify-center items-center gap-2">
-                                <img src="./images/download-removebg-preview.png" alt="User" />
+                                <img src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239664/theroyalgame/download-removebg-preview.png" alt="User" />
                                 <span className="text-[#FFD700] text-base font-bold">UPI Details</span>
                             </div>
                             <div className="flex flex-col items-center">
@@ -33,7 +33,7 @@ const BankAccount = () => {
 
                         <div className="block pt-8 md:pt-14 lg:pt-16">
                             <div className="flex justify-center items-center gap-2">
-                                <img src="./images/Vector2.png" alt="User" />
+                                <img src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239619/theroyalgame/Vector2.png" alt="User" />
                                 <span className="text-[#FFD700] text-base font-bold">Bank Details</span>
                             </div>
                             <div className="flex flex-col items-center">

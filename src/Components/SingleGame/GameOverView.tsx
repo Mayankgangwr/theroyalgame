@@ -38,7 +38,7 @@ const GameOverView: FC<IGameOverViewProps> = ({ }) => {
                     <div className={Styles.Result}>
                         <span className="text-2xl md:text-5xl lg:text-8xl font-extrabold">98</span>
                         <span className="text-sm font-extrabold">LAST WINNER</span>
-                        <img src="./images/crown.png" alt="Crown" />
+                        <img src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238478/theroyalgame/crown.png" alt="Crown" />
                     </div>
                     <span className="text-xs md:text-2xl lg:text-3xl font-extrabold text-[#FFD700]">THE ROYAL WINNER</span>
                 </div>

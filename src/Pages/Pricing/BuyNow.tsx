@@ -43,7 +43,7 @@ const BuyNow = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center gap-2 pb-3 md:pb-0">
                         <h1 className={`text-center text-2xl font-bold text-[#FFD700]`}>Amount ₹ 100</h1>
-                        <img src="./images/QR.png" alt="QR Code" />
+                        <img src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239406/theroyalgame/QR.png" alt="QR Code" />
                         <h1 className={`text-center text-3xl font-bold text-[#FFFFFF] pt-2`}>xyz@upi</h1>
                     </div>
                 </div>

@@ -86,7 +86,7 @@ const Leaderboard: FC<ILeaderboardProps> = ({ }) => {
                     <p className="text-2xl md:text-3xl font-bold text-[#FFD700] text-center">Leaderboard</p>
                     <p className="text-[7px] md:text-[10px] font-bold text-white text-center">Rise to the Top: Track Your Betting Brilliance on the Leaderboard!</p>
                 </div>
-                <img className="w-48 md:w-56 lg:w-64" src="./images/CustomRoulette.png" />
+                <img className="w-48 md:w-56 lg:w-64" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238547/theroyalgame/CustomRoulette.png" />
             </div>
             <div className={`${Styles.Section}`}>
                 <Table className={`${Styles.Table} `}>

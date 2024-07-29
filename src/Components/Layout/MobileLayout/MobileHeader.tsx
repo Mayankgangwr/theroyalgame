@@ -28,7 +28,7 @@ const MobileHeader = () => {
                     </MenuPopover>
                 </Menu>
 
-                <img className={Styles.Logo} src="./images/namelogo.png" alt="Logo" />
+                <img className={Styles.Logo} src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722239181/theroyalgame/namelogo.png" alt="Logo" />
                 <Flex className="gap-3" direction={FlexDirection.ROW} alignItems={AlignItems.CENTER} justifyContent={JustifyContent.END}>
                     <div className={Styles.AlertMessage}><AlertFilled fontSize={25} /></div>
                     <Menu>

@@ -10,17 +10,17 @@ const Home: FC<IHome> = ({ }) => {
         <div className={Styles.Container}>
             <div className={Styles.Navbar}>
                 <Link to={"/"} >
-                    <img className="h-12 md:h-full" src="./images/namelogo.png" alt="Logo" />
+                    <img className="h-12 md:h-full" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238850/theroyalgame/logo.png" alt="Logo" />
                 </Link>
             </div>
             <div className={Styles.BannerContainer}>
                 <div className={Styles.AuthContainer}>
                     <div className="flex flex-col justify-center items-center">
-                        <img className="h-12 md:h-full" src="./images/logo.png" alt="Logo" />
-                        <img className="h-10 md:h-full" src="./images/name.png" alt="Name" />
+                        <img className="h-12 md:h-full" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238850/theroyalgame/logo.png" alt="Logo" />
+                        <img className="h-10 md:h-full" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238966/theroyalgame/name.png" alt="Name" />
                     </div>
                     <Link to={"/"} >
-                        <img className="h-10 md:h-full" src="./images/googleAuth.png" alt="Google Auth" />
+                        <img className="h-10 md:h-full" src="https://res.cloudinary.com/chaiaurcodelearn/image/upload/v1722238753/theroyalgame/googleAuth.png" alt="Google Auth" />
                     </Link>
                 </div>
             </div>
